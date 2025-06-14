@@ -56,8 +56,15 @@ const Index = () => {
 
       {/* Navigation */}
       <nav className="relative z-50 flex justify-between items-center p-6 lg:px-12">
-        <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-          CommunityBuild
+        <div className="flex items-center space-x-3">
+          <img 
+            src="/lovable-uploads/7bf66d10-a2b6-42b2-acd2-564d68a6ad6e.png" 
+            alt="CommunityBuild Logo" 
+            className="h-8 w-auto"
+          />
+          <span className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+            CommunityBuild
+          </span>
         </div>
         <div className="hidden md:flex space-x-8">
           <Link to="/case-studies" className="hover:text-purple-400 transition-colors">Case Studies</Link>
@@ -87,10 +94,10 @@ const Index = () => {
           </span>
         </h1>
         
-        <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
           The bridge between Web2 comfort and Web3 possibilities. From zero to thriving ecosystem in 90 days.
           <br />
-          <span className="text-purple-400 font-semibold">Finally, someone who understands both technology AND community.</span>
+          <span className="text-purple-300 font-semibold">Finally, someone who understands both technology AND community.</span>
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -98,13 +105,15 @@ const Index = () => {
             Take Web3 Readiness Assessment
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
-          <Button size="lg" variant="outline" className="border-purple-500 text-purple-300 hover:bg-purple-500/10 text-lg px-8 py-4">
-            See Enterprise Case Studies
-          </Button>
+          <Link to="/case-studies">
+            <Button size="lg" variant="outline" className="border-purple-500 text-purple-200 hover:bg-purple-500/10 text-lg px-8 py-4">
+              See Enterprise Case Studies
+            </Button>
+          </Link>
         </div>
 
         {/* Live Stats */}
-        <div className="flex justify-center items-center space-x-4 text-sm text-gray-400 mb-16">
+        <div className="flex justify-center items-center space-x-4 text-sm text-gray-300 mb-16">
           <div className="flex items-center">
             <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
             <span>{memberCount.toLocaleString()} members and counting</span>
@@ -122,7 +131,7 @@ const Index = () => {
               <CardContent className="p-6 text-center">
                 <stat.icon className="h-8 w-8 mx-auto mb-3 text-purple-400" />
                 <div className="text-3xl font-bold text-white mb-1">{stat.number}</div>
-                <div className="text-gray-400 text-sm">{stat.label}</div>
+                <div className="text-gray-300 text-sm">{stat.label}</div>
               </CardContent>
             </Card>
           ))}
@@ -134,14 +143,14 @@ const Index = () => {
         <div className="max-w-6xl mx-auto text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             While others are still figuring out{' '}
-            <span className="text-gray-500">Web2</span>,{' '}
+            <span className="text-gray-400">Web2</span>,{' '}
             <br />
             our clients are{' '}
             <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
               dominating Web3
             </span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto">
             The communities we've built are already preparing for the next bull run. 
             Early adopters are seeing 10x engagement rates.
           </p>
@@ -152,10 +161,10 @@ const Index = () => {
             <CardContent className="p-8">
               <Users className="h-12 w-12 text-purple-400 mb-4" />
               <h3 className="text-2xl font-bold mb-4">Community Architecture</h3>
-              <p className="text-gray-300 mb-6">
+              <p className="text-gray-200 mb-6">
                 We design Web3-native experiences that feel familiar to Web2 users but unlock Web3 superpowers.
               </p>
-              <ul className="space-y-2 text-sm text-gray-400">
+              <ul className="space-y-2 text-sm text-gray-300">
                 <li>• Token-gated access systems</li>
                 <li>• Gamified engagement loops</li>
                 <li>• Decentralized governance</li>
@@ -168,10 +177,10 @@ const Index = () => {
             <CardContent className="p-8">
               <Zap className="h-12 w-12 text-blue-400 mb-4" />
               <h3 className="text-2xl font-bold mb-4">Rapid Deployment</h3>
-              <p className="text-gray-300 mb-6">
+              <p className="text-gray-200 mb-6">
                 From strategy to launch in weeks, not months. Our proven playbook accelerates every phase.
               </p>
-              <ul className="space-y-2 text-sm text-gray-400">
+              <ul className="space-y-2 text-sm text-gray-300">
                 <li>• 90-day thriving guarantee</li>
                 <li>• Pre-built Web3 integrations</li>
                 <li>• Automated onboarding flows</li>
@@ -184,10 +193,10 @@ const Index = () => {
             <CardContent className="p-8">
               <Shield className="h-12 w-12 text-pink-400 mb-4" />
               <h3 className="text-2xl font-bold mb-4">Enterprise Security</h3>
-              <p className="text-gray-300 mb-6">
+              <p className="text-gray-200 mb-6">
                 Bank-grade security meets Web3 innovation. Your community's assets and data are protected like our own crypto keys.
               </p>
-              <ul className="space-y-2 text-sm text-gray-400">
+              <ul className="space-y-2 text-sm text-gray-300">
                 <li>• Multi-sig wallet integration</li>
                 <li>• Audit-ready compliance</li>
                 <li>• Zero-knowledge privacy</li>
@@ -207,7 +216,7 @@ const Index = () => {
             </h2>
             <div className="flex flex-wrap justify-center gap-8 mt-8">
               {partnerships.map((partner, index) => (
-                <div key={index} className="text-gray-400 font-semibold text-lg opacity-70 hover:opacity-100 transition-opacity">
+                <div key={index} className="text-gray-300 font-semibold text-lg opacity-70 hover:opacity-100 transition-opacity">
                   {partner}
                 </div>
               ))}
@@ -223,13 +232,13 @@ const Index = () => {
                       <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
                     ))}
                   </div>
-                  <p className="text-gray-300 mb-6 text-lg leading-relaxed">
+                  <p className="text-gray-200 mb-6 text-lg leading-relaxed">
                     "{testimonial.text}"
                   </p>
                   <div>
                     <div className="font-semibold text-white">{testimonial.author}</div>
                     <div className="text-purple-400">{testimonial.role}</div>
-                    <div className="text-gray-400 text-sm">{testimonial.company}</div>
+                    <div className="text-gray-300 text-sm">{testimonial.company}</div>
                   </div>
                 </CardContent>
               </Card>
@@ -243,16 +252,16 @@ const Index = () => {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             Stop watching from the{' '}
-            <span className="text-gray-500">sidelines</span>
+            <span className="text-gray-400">sidelines</span>
             <br />
             <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
               Be part of history in the making
             </span>
           </h2>
-          <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+          <p className="text-xl text-gray-200 mb-8 leading-relaxed">
             The future favors the builders. Your community deserves Web3-native experiences.
             <br />
-            <span className="text-purple-400 font-semibold">The question isn't if you'll move to Web3, but when.</span>
+            <span className="text-purple-300 font-semibold">The question isn't if you'll move to Web3, but when.</span>
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -260,12 +269,12 @@ const Index = () => {
               Book Strategy Call
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button size="lg" variant="outline" className="border-purple-500 text-purple-300 hover:bg-purple-500/10 text-lg px-8 py-4">
+            <Button size="lg" variant="outline" className="border-purple-500 text-purple-200 hover:bg-purple-500/10 text-lg px-8 py-4">
               Download Market Analysis
             </Button>
           </div>
 
-          <div className="mt-12 text-sm text-gray-400">
+          <div className="mt-12 text-sm text-gray-300">
             <p>⚡ Only 5 new partnerships per quarter</p>
             <p>🔥 Early adopters get exclusive access to our flagship program</p>
           </div>
@@ -277,16 +286,23 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-4 gap-8">
             <div>
-              <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
-                CommunityBuild
+              <div className="flex items-center space-x-3 mb-4">
+                <img 
+                  src="/lovable-uploads/7bf66d10-a2b6-42b2-acd2-564d68a6ad6e.png" 
+                  alt="CommunityBuild Logo" 
+                  className="h-8 w-auto"
+                />
+                <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                  CommunityBuild
+                </span>
               </div>
-              <p className="text-gray-400">
+              <p className="text-gray-300">
                 Building the future of Web3 communities, one thriving ecosystem at a time.
               </p>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Services</h4>
-              <ul className="space-y-2 text-gray-400">
+              <h4 className="font-semibold mb-4 text-white">Services</h4>
+              <ul className="space-y-2 text-gray-300">
                 <li><Link to="/services" className="hover:text-purple-400 transition-colors">Community Architecture</Link></li>
                 <li><Link to="/services" className="hover:text-purple-400 transition-colors">Token Strategy</Link></li>
                 <li><Link to="/services" className="hover:text-purple-400 transition-colors">Governance Design</Link></li>
@@ -294,8 +310,8 @@ const Index = () => {
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Resources</h4>
-              <ul className="space-y-2 text-gray-400">
+              <h4 className="font-semibold mb-4 text-white">Resources</h4>
+              <ul className="space-y-2 text-gray-300">
                 <li><Link to="/blog" className="hover:text-purple-400 transition-colors">Web3 Insights</Link></li>
                 <li><Link to="/case-studies" className="hover:text-purple-400 transition-colors">Case Studies</Link></li>
                 <li><Link to="/assessment" className="hover:text-purple-400 transition-colors">Readiness Assessment</Link></li>
@@ -303,8 +319,8 @@ const Index = () => {
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Legal</h4>
-              <ul className="space-y-2 text-gray-400">
+              <h4 className="font-semibold mb-4 text-white">Legal</h4>
+              <ul className="space-y-2 text-gray-300">
                 <li><Link to="/privacy" className="hover:text-purple-400 transition-colors">Privacy Policy</Link></li>
                 <li><Link to="/terms" className="hover:text-purple-400 transition-colors">Terms of Service</Link></li>
                 <li><Link to="/about" className="hover:text-purple-400 transition-colors">About Us</Link></li>
@@ -312,7 +328,7 @@ const Index = () => {
               </ul>
             </div>
           </div>
-          <div className="border-t border-white/10 mt-8 pt-8 text-center text-gray-400">
+          <div className="border-t border-white/10 mt-8 pt-8 text-center text-gray-300">
             <p>&copy; 2024 CommunityBuild. All rights reserved. Building the future, one community at a time.</p>
           </div>
         </div>
