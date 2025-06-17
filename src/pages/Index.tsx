@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -60,7 +59,7 @@ const Index = () => {
           <img 
             src="/lovable-uploads/7bf66d10-a2b6-42b2-acd2-564d68a6ad6e.png" 
             alt="CommunityBuild Logo" 
-            className="h-8 w-auto"
+            className="h-8 w-auto bg-white/90 rounded p-1"
           />
           <span className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
             CommunityBuild
@@ -69,11 +68,13 @@ const Index = () => {
         <div className="hidden md:flex space-x-8">
           <Link to="/case-studies" className="hover:text-purple-400 transition-colors">Case Studies</Link>
           <Link to="/about" className="hover:text-purple-400 transition-colors">About</Link>
-          <Link to="/contact" className="hover:text-purple-400 transition-colors">Contact</Link>
+          <a href="https://t.me/arunphilips" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">Contact</a>
         </div>
-        <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 border-none">
-          Get Started
-        </Button>
+        <a href="https://t.me/arunphilips" target="_blank" rel="noopener noreferrer">
+          <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 border-none">
+            Get Started
+          </Button>
+        </a>
       </nav>
 
       {/* Hero Section */}
@@ -101,12 +102,14 @@ const Index = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <Button size="lg" className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-lg px-8 py-4">
-            Take Web3 Readiness Assessment
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          <a href="https://t.me/arunphilips" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-lg px-8 py-4 w-full sm:w-auto">
+              Take Web3 Readiness Assessment
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </a>
           <Link to="/case-studies">
-            <Button size="lg" variant="outline" className="border-purple-500 text-purple-200 hover:bg-purple-500/10 text-lg px-8 py-4">
+            <Button size="lg" variant="outline" className="border-purple-500 text-purple-200 hover:bg-purple-500/10 text-lg px-8 py-4 w-full sm:w-auto">
               See Enterprise Case Studies
             </Button>
           </Link>
@@ -150,10 +153,28 @@ const Index = () => {
               dominating Web3
             </span>
           </h2>
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-200 max-w-3xl mx-auto mb-8">
             The communities we've built are already preparing for the next bull run. 
-            Early adopters are seeing 10x engagement rates.
+            Early adopters are seeing{' '}
+            <span className="bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent font-bold text-2xl">
+              10x engagement rates
+            </span>.
           </p>
+          <div className="bg-gradient-to-r from-green-500/20 to-blue-500/20 p-6 rounded-lg border border-green-500/30 max-w-2xl mx-auto">
+            <p className="text-green-200 text-lg font-semibold mb-4">
+              🚀 Proven Results That Speak for Themselves
+            </p>
+            <div className="grid grid-cols-2 gap-4 text-center">
+              <div className="bg-black/30 rounded-lg p-4">
+                <div className="text-3xl font-bold text-green-300">10x</div>
+                <div className="text-green-200 text-sm">Average Engagement</div>
+              </div>
+              <div className="bg-black/30 rounded-lg p-4">
+                <div className="text-3xl font-bold text-blue-300">90</div>
+                <div className="text-blue-200 text-sm">Days to Success</div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -265,13 +286,17 @@ const Index = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-lg px-8 py-4">
-              Book Strategy Call
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button size="lg" variant="outline" className="border-purple-500 text-purple-200 hover:bg-purple-500/10 text-lg px-8 py-4">
-              Download Market Analysis
-            </Button>
+            <a href="https://t.me/arunphilips" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-lg px-8 py-4 w-full sm:w-auto">
+                Book Strategy Call
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
+            <a href="https://t.me/arunphilips" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" variant="outline" className="border-purple-500 text-purple-200 hover:bg-purple-500/10 text-lg px-8 py-4 w-full sm:w-auto">
+                Download Market Analysis
+              </Button>
+            </a>
           </div>
 
           <div className="mt-12 text-sm text-gray-300">
@@ -324,12 +349,12 @@ const Index = () => {
                 <li><Link to="/privacy" className="hover:text-purple-400 transition-colors">Privacy Policy</Link></li>
                 <li><Link to="/terms" className="hover:text-purple-400 transition-colors">Terms of Service</Link></li>
                 <li><Link to="/about" className="hover:text-purple-400 transition-colors">About Us</Link></li>
-                <li><Link to="/contact" className="hover:text-purple-400 transition-colors">Contact</Link></li>
+                <li><a href="https://t.me/arunphilips" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">Contact</a></li>
               </ul>
             </div>
           </div>
           <div className="border-t border-white/10 mt-8 pt-8 text-center text-gray-300">
-            <p>&copy; 2024 CommunityBuild. All rights reserved. Building the future, one community at a time.</p>
+            <p>&copy; 2025 CommunityBuild. All rights reserved. Building the future, one community at a time.</p>
           </div>
         </div>
       </footer>
