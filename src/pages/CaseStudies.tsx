@@ -331,7 +331,7 @@ const CaseStudies = () => {
               <h4 className="font-semibold mb-4 text-white">Resources</h4>
               <ul className="space-y-2 text-gray-300">
                 <li><Link to="/research" className="hover:text-purple-300 transition-colors">Research Reports</Link></li>
-                <li><Link to="/blog" className="hover:text-purple-300 transition-colors">Blog</Link>li>
+                <li><Link to="/blog" className="hover:text-purple-300 transition-colors">Blog</Link></li>
                 <li><Link to="/events" className="hover:text-purple-300 transition-colors">Upcoming Events</Link></li>
                 <li><Link to="/community" className="hover:text-purple-300 transition-colors">Join Community</Link></li>
               </ul>
