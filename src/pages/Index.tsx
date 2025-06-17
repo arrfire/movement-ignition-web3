@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -109,7 +110,7 @@ const Index = () => {
             </Button>
           </a>
           <Link to="/case-studies">
-            <Button size="lg" variant="outline" className="border-purple-500 text-purple-200 hover:bg-purple-500/10 text-lg px-8 py-4 w-full sm:w-auto">
+            <Button size="lg" className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white border-none text-lg px-8 py-4 w-full sm:w-auto font-semibold shadow-xl">
               See Enterprise Case Studies
             </Button>
           </Link>
@@ -160,68 +161,104 @@ const Index = () => {
               10x engagement rates
             </span>.
           </p>
-          <div className="bg-gradient-to-r from-green-500/20 to-blue-500/20 p-6 rounded-lg border border-green-500/30 max-w-2xl mx-auto">
-            <p className="text-green-200 text-lg font-semibold mb-4">
+          <div className="bg-gradient-to-r from-emerald-500/30 to-blue-500/30 p-8 rounded-xl border-2 border-emerald-400/50 max-w-2xl mx-auto shadow-2xl">
+            <p className="text-emerald-100 text-xl font-bold mb-6">
               🚀 Proven Results That Speak for Themselves
             </p>
-            <div className="grid grid-cols-2 gap-4 text-center">
-              <div className="bg-black/30 rounded-lg p-4">
-                <div className="text-3xl font-bold text-green-300">10x</div>
-                <div className="text-green-200 text-sm">Average Engagement</div>
+            <div className="grid grid-cols-2 gap-6 text-center">
+              <div className="bg-emerald-600/40 rounded-xl p-6 border border-emerald-400/30">
+                <div className="text-4xl font-bold text-emerald-200">10x</div>
+                <div className="text-emerald-100 text-base font-medium">Average Engagement</div>
               </div>
-              <div className="bg-black/30 rounded-lg p-4">
-                <div className="text-3xl font-bold text-blue-300">90</div>
-                <div className="text-blue-200 text-sm">Days to Success</div>
+              <div className="bg-blue-600/40 rounded-xl p-6 border border-blue-400/30">
+                <div className="text-4xl font-bold text-blue-200">90</div>
+                <div className="text-blue-100 text-base font-medium">Days to Success</div>
               </div>
             </div>
           </div>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <Card className="bg-gradient-to-br from-purple-900/50 to-pink-900/50 border-purple-500/30 backdrop-blur-lg">
+          <Card className="bg-gradient-to-br from-purple-800/70 to-pink-800/70 border-2 border-purple-400/50 backdrop-blur-lg shadow-2xl">
             <CardContent className="p-8">
-              <Users className="h-12 w-12 text-purple-400 mb-4" />
-              <h3 className="text-2xl font-bold mb-4">Community Architecture</h3>
-              <p className="text-gray-200 mb-6">
+              <Users className="h-12 w-12 text-purple-200 mb-4" />
+              <h3 className="text-2xl font-bold mb-4 text-white">Community Architecture</h3>
+              <p className="text-purple-100 mb-6 text-base leading-relaxed">
                 We design Web3-native experiences that feel familiar to Web2 users but unlock Web3 superpowers.
               </p>
-              <ul className="space-y-2 text-sm text-gray-300">
-                <li>• Token-gated access systems</li>
-                <li>• Gamified engagement loops</li>
-                <li>• Decentralized governance</li>
-                <li>• Cross-chain compatibility</li>
+              <ul className="space-y-3 text-sm text-purple-50">
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-purple-300 rounded-full mr-3"></span>
+                  Token-gated access systems
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-purple-300 rounded-full mr-3"></span>
+                  Gamified engagement loops
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-purple-300 rounded-full mr-3"></span>
+                  Decentralized governance
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-purple-300 rounded-full mr-3"></span>
+                  Cross-chain compatibility
+                </li>
               </ul>
             </CardContent>
           </Card>
 
-          <Card className="bg-gradient-to-br from-blue-900/50 to-purple-900/50 border-blue-500/30 backdrop-blur-lg">
+          <Card className="bg-gradient-to-br from-blue-800/70 to-cyan-800/70 border-2 border-blue-400/50 backdrop-blur-lg shadow-2xl">
             <CardContent className="p-8">
-              <Zap className="h-12 w-12 text-blue-400 mb-4" />
-              <h3 className="text-2xl font-bold mb-4">Rapid Deployment</h3>
-              <p className="text-gray-200 mb-6">
+              <Zap className="h-12 w-12 text-blue-200 mb-4" />
+              <h3 className="text-2xl font-bold mb-4 text-white">Rapid Deployment</h3>
+              <p className="text-blue-100 mb-6 text-base leading-relaxed">
                 From strategy to launch in weeks, not months. Our proven playbook accelerates every phase.
               </p>
-              <ul className="space-y-2 text-sm text-gray-300">
-                <li>• 90-day thriving guarantee</li>
-                <li>• Pre-built Web3 integrations</li>
-                <li>• Automated onboarding flows</li>
-                <li>• 24/7 monitoring & optimization</li>
+              <ul className="space-y-3 text-sm text-blue-50">
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-blue-300 rounded-full mr-3"></span>
+                  90-day thriving guarantee
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-blue-300 rounded-full mr-3"></span>
+                  Pre-built Web3 integrations
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-blue-300 rounded-full mr-3"></span>
+                  Automated onboarding flows
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-blue-300 rounded-full mr-3"></span>
+                  24/7 monitoring & optimization
+                </li>
               </ul>
             </CardContent>
           </Card>
 
-          <Card className="bg-gradient-to-br from-pink-900/50 to-purple-900/50 border-pink-500/30 backdrop-blur-lg">
+          <Card className="bg-gradient-to-br from-pink-800/70 to-rose-800/70 border-2 border-pink-400/50 backdrop-blur-lg shadow-2xl">
             <CardContent className="p-8">
-              <Shield className="h-12 w-12 text-pink-400 mb-4" />
-              <h3 className="text-2xl font-bold mb-4">Enterprise Security</h3>
-              <p className="text-gray-200 mb-6">
+              <Shield className="h-12 w-12 text-pink-200 mb-4" />
+              <h3 className="text-2xl font-bold mb-4 text-white">Enterprise Security</h3>
+              <p className="text-pink-100 mb-6 text-base leading-relaxed">
                 Bank-grade security meets Web3 innovation. Your community's assets and data are protected like our own crypto keys.
               </p>
-              <ul className="space-y-2 text-sm text-gray-300">
-                <li>• Multi-sig wallet integration</li>
-                <li>• Audit-ready compliance</li>
-                <li>• Zero-knowledge privacy</li>
-                <li>• Incident response team</li>
+              <ul className="space-y-3 text-sm text-pink-50">
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-pink-300 rounded-full mr-3"></span>
+                  Multi-sig wallet integration
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-pink-300 rounded-full mr-3"></span>
+                  Audit-ready compliance
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-pink-300 rounded-full mr-3"></span>
+                  Zero-knowledge privacy
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-pink-300 rounded-full mr-3"></span>
+                  Incident response team
+                </li>
               </ul>
             </CardContent>
           </Card>
@@ -293,7 +330,7 @@ const Index = () => {
               </Button>
             </a>
             <a href="https://t.me/arunphilips" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" variant="outline" className="border-purple-500 text-purple-200 hover:bg-purple-500/10 text-lg px-8 py-4 w-full sm:w-auto">
+              <Button size="lg" className="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white border-none text-lg px-8 py-4 w-full sm:w-auto font-semibold shadow-xl">
                 Download Market Analysis
               </Button>
             </a>
@@ -315,7 +352,7 @@ const Index = () => {
                 <img 
                   src="/lovable-uploads/7bf66d10-a2b6-42b2-acd2-564d68a6ad6e.png" 
                   alt="CommunityBuild Logo" 
-                  className="h-8 w-auto"
+                  className="h-8 w-auto bg-white/90 rounded p-1"
                 />
                 <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                   CommunityBuild
