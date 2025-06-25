@@ -329,7 +329,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t border-white/10 mt-8 pt-8 text-center text-gray-300">
-            <p>&copy; 2024 CommunityBuild. All rights reserved. Building the future, one community at a time.</p>
+            <p>&copy; 2025 CommunityBuild FZE LLC. All rights reserved. Building the future, one community at a time.</p>
           </div>
         </div>
       </footer>
