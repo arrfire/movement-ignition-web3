@@ -308,7 +308,7 @@ const CaseStudies = () => {
                 <img 
                   src="/lovable-uploads/7bf66d10-a2b6-42b2-acd2-564d68a6ad6e.png" 
                   alt="CommunityBuild Logo" 
-                  className="h-8 w-auto bg-white rounded p-1"
+                  className="h-8 w-auto bg-white/90 rounded p-1"
                 />
                 <span className="text-xl font-bold bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent">
                   CommunityBuild
@@ -339,15 +339,15 @@ const CaseStudies = () => {
             <div>
               <h4 className="font-semibold mb-4 text-white">Connect</h4>
               <ul className="space-y-2 text-gray-300">
-                <li><Link to="/contact" className="hover:text-purple-300 transition-colors">Contact Us</Link></li>
+                <li><a href="https://t.me/arunphilips" target="_blank" rel="noopener noreferrer" className="hover:text-purple-300 transition-colors">Contact Us</a></li>
                 <li><a href="https://t.me/arunphilips" target="_blank" rel="noopener noreferrer" className="hover:text-purple-300 transition-colors">Telegram</a></li>
                 <li><a href="https://mirror.xyz/communitybuild.eth" target="_blank" rel="noopener noreferrer" className="hover:text-purple-300 transition-colors">Mirror Blog</a></li>
-                <li><Link to="/careers" className="hover:text-purple-300 transition-colors">Careers</Link></li>
+                <li><Link to="/about" className="hover:text-purple-300 transition-colors">About Us</Link></li>
               </ul>
             </div>
           </div>
           <div className="border-t border-slate-700 mt-8 pt-8 text-center text-gray-300">
-            <p>&copy; 2024 CommunityBuild. All rights reserved. Revolutionizing communities with Web3.</p>
+            <p>&copy; 2025 CommunityBuild. All rights reserved. Revolutionizing communities with Web3.</p>
           </div>
         </div>
       </footer>
