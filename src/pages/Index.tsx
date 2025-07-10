@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -358,9 +357,13 @@ const Index = () => {
                   CommunityBuild
                 </span>
               </div>
-              <p className="text-gray-300">
+              <p className="text-gray-300 mb-3">
                 Building the future of Web3 communities, one thriving ecosystem at a time.
               </p>
+              <div className="text-sm text-gray-400">
+                <p className="font-semibold text-purple-300">CommunityBuild FZE LLC</p>
+                <p>Registered in the UAE</p>
+              </div>
             </div>
             <div>
               <h4 className="font-semibold mb-4 text-white">Services</h4>
@@ -392,6 +395,7 @@ const Index = () => {
           </div>
           <div className="border-t border-white/10 mt-8 pt-8 text-center text-gray-300">
             <p>&copy; 2025 CommunityBuild FZE LLC. All rights reserved. Building the future, one community at a time.</p>
+            <p className="text-sm text-gray-400 mt-2">Registered in the United Arab Emirates</p>
           </div>
         </div>
       </footer>
