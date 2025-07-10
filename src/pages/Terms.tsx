@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -15,7 +14,7 @@ const Terms = () => {
             className="h-10 w-auto bg-white/90 rounded-lg p-1"
           />
           <span className="text-2xl font-bold bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent">
-            CommunityBuild
+            CommunityBuild FZE LLC
           </span>
         </Link>
         <Link to="/">

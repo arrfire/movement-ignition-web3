@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -14,7 +15,7 @@ const About = () => {
             className="h-10 w-auto bg-white/90 rounded-lg p-1"
           />
           <span className="text-2xl font-bold bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent">
-            CommunityBuild
+            CommunityBuild FZE LLC
           </span>
         </Link>
         <Link to="/">
@@ -27,7 +28,7 @@ const About = () => {
 
       <div className="max-w-4xl mx-auto px-6 lg:px-12 py-20">
         <h1 className="text-4xl lg:text-5xl font-bold mb-8 bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent">
-          About CommunityBuild
+          About CommunityBuild FZE LLC
         </h1>
         
         <div className="prose prose-invert max-w-none">

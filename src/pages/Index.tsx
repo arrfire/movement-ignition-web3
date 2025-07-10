@@ -61,9 +61,14 @@ const Index = () => {
             alt="CommunityBuild Logo" 
             className="h-8 w-auto bg-white/90 rounded p-1"
           />
-          <span className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-            CommunityBuild
-          </span>
+          <div className="flex flex-col">
+            <span className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+              CommunityBuild
+            </span>
+            <span className="text-xs text-gray-300 font-medium">
+              FZE LLC • UAE Registered
+            </span>
+          </div>
         </div>
         <div className="hidden md:flex space-x-8">
           <Link to="/case-studies" className="hover:text-purple-400 transition-colors">Case Studies</Link>
@@ -354,15 +359,14 @@ const Index = () => {
                   className="h-8 w-auto bg-white/90 rounded p-1"
                 />
                 <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                  CommunityBuild
+                  CommunityBuild FZE LLC
                 </span>
               </div>
               <p className="text-gray-300 mb-3">
                 Building the future of Web3 communities, one thriving ecosystem at a time.
               </p>
               <div className="text-sm text-gray-400">
-                <p className="font-semibold text-purple-300">CommunityBuild FZE LLC</p>
-                <p>Registered in the UAE</p>
+                <p className="font-semibold text-purple-300">Registered in the United Arab Emirates</p>
               </div>
             </div>
             <div>

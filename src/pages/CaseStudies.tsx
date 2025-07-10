@@ -36,7 +36,7 @@ const CaseStudies = () => {
             className="h-10 w-auto bg-white/90 rounded-lg p-1"
           />
           <span className="text-2xl font-bold bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent">
-            CommunityBuild
+            CommunityBuild FZE LLC
           </span>
         </Link>
         <Link to="/">
@@ -89,7 +89,7 @@ const CaseStudies = () => {
                   className="h-8 w-auto bg-white/90 rounded p-1"
                 />
                 <span className="text-xl font-bold bg-gradient-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent">
-                  CommunityBuild
+                  CommunityBuild FZE LLC
                 </span>
               </div>
               <p className="text-gray-300 mb-3">
